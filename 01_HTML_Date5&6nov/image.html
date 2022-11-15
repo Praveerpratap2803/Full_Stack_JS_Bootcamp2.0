@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <map name="room">
+        <area onclick=clock1() shape="circle" coords="7,5,435,652" href="https://www.google.com" alt="google">
+        <area onclick=clock2() shape="circle" coords="457,10,987,657" href="https://www.facebook.com" alt="facebook">
+    </map>
+
+    <img usemap="#room"  src="./image1.avif" alt="home">
+    <script>
+        function clock1(){
+            alert("clicked google");
+        }
+        function clock2(){
+            alert("clicked facebook");
+        }
+    </script>
+</body>
+</html>
