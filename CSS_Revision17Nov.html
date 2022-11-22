@@ -6,18 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        /* universal selector */
+        *{ 
             color: red;
         }
+        /* individual selector */
         p{
             background-color: black;
         }
+        article{
+            background-color: blue;
+        }
+        /* class and id selector */
+        .hello{
+            border: 1px solid black;
+        }
+        #h{
+            border: 2px solid blueviolet;
+            box-shadow: 5px 10px 1px red;
+        }
+        /* and selector chained */
+        h2#hi.hii{
+            color: aqua;
+        }
+        /* inside an element */
+        div section article{
+            background-color: brown;
+            color: black;
+        }
+        /* direct child */
+        section>span{
+            color:bisque
+        }
+        /* sibling */
+        .sibling + p{
+            color: yellow;
+        }
+        .pseudoClass::before{
+            content: 'abc';
+        }
+        .pseudoClass:hover:after{
+            content: 'def';
+        }
+
     </style>
 </head>
 <body>
-    <h1>Hello Everyone</h1>
-    <h2>Hi</h2>
+    <h1 class="hello">Hello Everyone</h1>
+    <h2 id="h" >Hi</h2>
+    <h2 id="hi" class="hii">Hi</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste debitis exercitationem nulla aut voluptas voluptates assumenda doloribus temporibus facere voluptatibus?</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ipsa?</p>
+    <span>this is span tag</span>
+    <section>this is section tag</section>
+    <div>
+        this is div tag
+        <p>this is p content inside div tag</p> 
+        <span>this is span content inside dig tag </span>
+    </div>
+    <div>
+        <section>
+            <article>praveer</article>
+            <article>praveer</article>
+            <article>praveer</article>
+        </section>
+    </div>
+    <section>
+        <span>veer</span>
+        <span>veer</span>
+    </section>
+    <div class="parent">
+        <p>1</p>
+        <p class="sibling">2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+    </div>
+    <article>this is article content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ad magnam eos, distinctio voluptatibus alias repellendus. Esse magni autem corrupti.</article>
+
+    <div class="pseudoClass">
+        <input type="text" >
+    </div>
+
+
 </body>
 </html>
