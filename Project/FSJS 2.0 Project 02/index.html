@@ -24,8 +24,17 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: "Gill Sans", sans-serif;
       }
-      
+      body{
+        background-image: url("assets/bg.png");
+        background-position: center;
+        /* background-size: cover; */
+        background-size: 100% 100%;
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
       .navbar{
         display: flex;
         justify-content: space-between;
@@ -62,14 +71,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url("assets/bg.png");
-        background-position: center;
-        /* background-size: cover; */
-        background-size: 100% 100%;
-        /* background-size: contain; */
-        background-repeat: no-repeat;
-        width: 100vw;
-        height: 100vh;
+        
         
         
         color: white;
@@ -77,7 +79,8 @@
       .hero-heading{
         font-size: 60px;
         margin-bottom: 0px;
-        width: 520px;
+        margin: 50px 0 0 0;
+        width: 567px;
       }
       
       .button-large{
@@ -91,6 +94,11 @@
       }
       .hero-description{
         margin: 15px 0px;
+      }
+      .list-item:nth-child(1)::after{
+        content:  '\02C5';
+        margin: 0 7px;
+        
       }
     </style>
   </head>
