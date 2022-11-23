@@ -23,6 +23,16 @@
     />
     <title>Fashion Hub</title>
     <style>
+      *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Orbitron;
+      }
+      body{
+        max-width: 1000px;
+        overflow-y: hidden;
+      }
       .list{
         display: flex;
         list-style: none;
@@ -32,11 +42,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 30px;
+
       }
       .navbar-container>div>img{
         display: flex;
         align-items: center;
-        width: 100px;
+        width: 115px;
         height: 40px;
       }
       .search-icon svg{
@@ -54,22 +66,34 @@
         border-radius: 5px;
         padding: 5px 20px;
       }
+      .list-item{
+        color: black;
+      }
+      .list-item:nth-child(1){
+        color: black;
+        font-weight: bolder;
+        border-bottom: 2px solid black;
+        
+      }
       .square>img{
         width: 250px;
         height: 250px;
         position: relative;
-        left: 113px;
-        top: 206px;
+        left: 130px;
+        top: 232px;
 
       }
       .hero-container{
+        margin: 30px;
+      }
+      /* .hero-container{
         display: flex;
         width: 100%;
       }
       .hero-container>div>img{
         position: relative;
-        right: 500px;
-        width: 400px;
+        right: 475px;
+        width: 332px;
       }
       .hero-container-right{
         width: 60%;
@@ -79,6 +103,100 @@
       }
       .hero-container>span:nth-child(3){
         background-color: green;
+      }
+      .hero-container-right .hero-heading{
+        font-size: 70px;
+        width: 100px;
+      } */
+      .hero-container>div>img{
+        width: 326px;
+        position: relative;
+        bottom: 218px;
+      }
+      .hero-heading{
+        font-size: 47px;
+        position: relative;
+        bottom: 576px;
+        left: 344px;
+        display: inline;
+      }
+      .hero-description{
+      display: inline-block;
+      font-size: 13px;
+      width: 470px;
+      position: relative;
+      bottom: 538px;
+      left: 418px;
+      color: gray;
+      text-align: center;
+      }
+      .hero-container-right div:nth-child(odd){
+        display: inline-block;
+        position: relative;
+        bottom: 440px;
+        left: 61px;
+      }
+      .hero-container-right div:nth-child(odd) button:nth-child(odd){
+        background-color: white;
+        border-radius: 10px;
+        padding: 6px 18px;
+        font-size: 15px;
+        color: gray;
+      }
+      .hero-container-right div:nth-child(odd) button:nth-child(even){
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 6px 18px;
+        font-size: 15px;        
+      }
+      .hero-container-right div:nth-child(even) h4{
+        display: inline;
+        position: relative;
+        bottom: 412px;
+        left: 634px;
+        color: gray;
+        
+      }
+      .hero-container .star:nth-child(2) img{
+        position: relative;
+        top: 187px;
+        left: 158px;
+        width: 40px;
+      }
+      .hero-container .star:nth-child(3) img{
+        
+        position: relative;
+        bottom: 179px;
+        left: 565px;
+        width: 45px;
+      }
+      .icons{
+        position: relative;
+        bottom: 363px;
+        left: 530px;
+        display: inline;
+      }
+      .icons span:nth-child(1) img{
+        width: 30px;
+      }
+      .icons span:nth-child(2) img{
+        
+        width: 30px;
+      }
+      .icons span:nth-child(3) img{
+        
+        width: 30px;
+      }
+      .icons span:nth-child(4) img{
+        
+        width: 30px;
+      }
+      .globe>img{
+        position: relative;
+        left: 88px;
+        bottom: 217px;
+        width: 48px;
       }
     </style>
   </head>
