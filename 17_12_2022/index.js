@@ -1,4 +1,4 @@
-let name1 = ['a','b','c'];
+//let name1 = ['a','b','c'];
 
 // console.log(name1);
 // console.log(name1.length);
@@ -6,18 +6,19 @@ let name1 = ['a','b','c'];
 // console.log(name1[name1.length-1]);
 // name1[1]='x';
 
-let name2= new Array(1,2,3);
-console.log(typeof(name1));
-console.log(typeof(name2));
+//let name2= new Array(1,2,3);
+// console.log(typeof(name1));
+// console.log(typeof(name2));
 
-// names1.push('d');
+let name3 = ['a','b','c','d'];
+name3.push(3);
+console.log(name3);
+
+console.log(name3.slice(2,5));
 
 
 
-// let names2 = ['a','b','c'];
-// for(let a of names2){
-//     if(a==='b'){
-//         console.log("error");
-//     }
-    
-// }
+
+
+
+
